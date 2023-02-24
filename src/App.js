@@ -1,7 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import './styles.css'
-import { Box, Center, Environment, OrbitControls, Plane, SpotLight } from '@react-three/drei'
-import ElectricRock from './components/ElectricRock'
+import { Box, Center, Environment, OrbitControls, Plane, SpotLight, BakeShadows } from '@react-three/drei'
 import TheThing from './components/TheThing'
 import { DoubleSide, PCFSoftShadowMap, PointLight, sRGBEncoding, Vector3 } from 'three'
 import { Jar } from './components/Jar'
@@ -42,6 +41,7 @@ export default function App() {
 
       <Environment preset="night" />
       <Scene />
+      {/* <BakeShadows /> */}
       <OrbitControls />
     </Canvas>
   )

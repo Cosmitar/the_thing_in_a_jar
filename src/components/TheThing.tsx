@@ -124,10 +124,10 @@ export default function TheThing(props: JSX.IntrinsicElements['group']) {
   return (
     <group scale={Size} rotation={[Math.PI / 2, 0, Math.PI / 2]} {...props}>
       <mesh material={CustomMaterial} castShadow receiveShadow customDepthMaterial={CustomMaterial.getDepthMaterial()}>
-        <icosahedronGeometry args={[2, 100]} />
+        <icosahedronGeometry args={[2, 50]} />
       </mesh>
       <mesh material={new MeshBasicMaterial({ color: 0x000000 })}>
-        <icosahedronGeometry args={[2, 100]} />
+        <icosahedronGeometry args={[2, 10]} />
       </mesh>
     </group>
   )
