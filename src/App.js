@@ -39,7 +39,7 @@ export default function App() {
       <pointLight position={[0.5, 0.5, 0.75]} intensity={1.75} castShadow />
       <pointLight position={[-0.5, 0.0, 0.75]} intensity={1.75} castShadow />
 
-      <Environment preset="night" />
+      {/* <Environment preset="night" /> */}
       <Scene />
       {/* <BakeShadows /> */}
       <OrbitControls />
